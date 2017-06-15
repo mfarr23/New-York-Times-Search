@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>New York Times Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <!-- bootstrap overrides -->
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+</head>
+<body>
+​
+<div class="container">
+  <h2>Search Parameters</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="search-terms">Search Terms:</label>
+      <input type="search" class="form-control" id="search-terms" placeholder="search term" name="email">
+    </div>
+    <div class="form-group">
+      <label for="number">Numbers of Records to Retrieve:</label>
+      <input type="number" class="form-control" id="number" placeholder="records to retrieve" name="number">
+    </div>
+    <div class="form-group">
+      <label for="startyear">Start Year (optional):</label>
+      <input type="number" class="form-control" id="startyear" placeholder="start year" name="startyear">
+    </div>
+       <div class="form-group">
+      <label for="endyear">Start Year (optional):</label>
+      <input type="number" class="form-control" id="endyear" placeholder="end year" name="endyear">
+    </div>
+    
+    <button type="search" class="btn btn-default">
+     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search</button>
+
+    <button type="clear" class="btn btn-default"> <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>Clear Results</button>
+
+  </form>
+</div>
+
+<div class="container">
+  <h2>Results</h2>
+   <div id="resultsDisplay"></div>
+
+</div>
+
+
+​
+
+</body>
+</html>
+​
+
